@@ -1,0 +1,6 @@
+set(__QT_DEPLOY_TARGET_ArrayHeap_FILE /Users/yaroslav/study/OAiP/2sem/LR8/Task_2/build/Desktop-Debug/libArrayHeap.a)
+set(__QT_DEPLOY_TARGET_ArrayHeap_TYPE STATIC_LIBRARY)
+set(__QT_DEPLOY_TARGET_ListHeap_FILE /Users/yaroslav/study/OAiP/2sem/LR8/Task_2/build/Desktop-Debug/libListHeap.dylib)
+set(__QT_DEPLOY_TARGET_ListHeap_TYPE SHARED_LIBRARY)
+set(__QT_DEPLOY_TARGET_HeapApp_FILE /Users/yaroslav/study/OAiP/2sem/LR8/Task_2/build/Desktop-Debug/HeapApp)
+set(__QT_DEPLOY_TARGET_HeapApp_TYPE EXECUTABLE)

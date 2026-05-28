@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>850</width><height>600</height></rect>
+  </property>
+  <property name="windowTitle"><string>Задание 4 — check_equals</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+
+    <item>
+     <widget class="QGroupBox">
+      <property name="title"><string>Объяснение реализации</string></property>
+      <layout class="QVBoxLayout">
+       <item>
+        <widget class="QTextEdit" name="textExplain">
+         <property name="readOnly"><bool>true</bool></property>
+         <property name="maximumHeight"><number>120</number></property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QGroupBox">
+      <property name="title"><string>Проверка check_equals вручную</string></property>
+      <layout class="QHBoxLayout">
+       <item><widget class="QLabel"><property name="text"><string>Левый объект:</string></property></widget></item>
+       <item><widget class="QComboBox" name="cmbLeft"/></item>
+       <item><widget class="QLabel"><property name="text"><string>Правый объект:</string></property></widget></item>
+       <item><widget class="QComboBox" name="cmbRight"/></item>
+       <item><widget class="QPushButton" name="btnCheck"><property name="text"><string>Проверить</string></property></widget></item>
+       <item><widget class="QPushButton" name="btnRunAllTests"><property name="text"><string>Все комбинации</string></property></widget></item>
+      </layout>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QGroupBox">
+      <property name="title"><string>Результаты</string></property>
+      <layout class="QVBoxLayout">
+       <item>
+        <widget class="QTableWidget" name="tableResults">
+         <property name="selectionBehavior"><enum>QAbstractItemView::SelectRows</enum></property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+</ui>

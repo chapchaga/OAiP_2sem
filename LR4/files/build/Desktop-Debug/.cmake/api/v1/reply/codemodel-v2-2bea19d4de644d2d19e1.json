@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-6f023719034dcf36ac92.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Task_5",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Task_5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task_5-Debug-f1ce53a7b841425baea5.json",
+					"name" : "Task_5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Task_5_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task_5_autogen-Debug-5c44bd8bdda6eb324b11.json",
+					"name" : "Task_5_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Task_5_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task_5_autogen_timestamp_deps-Debug-04682200ffe43d230d31.json",
+					"name" : "Task_5_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/user/study/oaip/2sem/LR4/files/build/Desktop-Debug",
+		"source" : "/home/user/study/oaip/2sem/LR4/Task_5"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

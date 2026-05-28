@@ -1,0 +1,5 @@
+/Users/yaroslav/study/OAiP/2sem/LR7/Task_1/build/Desktop-Debug/CMakeFiles/Lab7_Task1.dir
+/Users/yaroslav/study/OAiP/2sem/LR7/Task_1/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/Users/yaroslav/study/OAiP/2sem/LR7/Task_1/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/Users/yaroslav/study/OAiP/2sem/LR7/Task_1/build/Desktop-Debug/CMakeFiles/Lab7_Task1_autogen_timestamp_deps.dir
+/Users/yaroslav/study/OAiP/2sem/LR7/Task_1/build/Desktop-Debug/CMakeFiles/Lab7_Task1_autogen.dir

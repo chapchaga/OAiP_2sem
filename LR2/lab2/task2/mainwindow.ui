@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1050</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <item>
+     <layout class="QHBoxLayout" name="fileLayout">
+      <item>
+       <widget class="QPushButton" name="btnLoadDishes">
+        <property name="text">
+         <string>📂 Загрузить блюда</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSaveDishes">
+        <property name="text">
+         <string>💾 Сохранить блюда</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnLoadOrders">
+        <property name="text">
+         <string>📂 Загрузить заказы</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSaveOrders">
+        <property name="text">
+         <string>💾 Сохранить заказы</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="fileSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnRunTests">
+        <property name="text">
+         <string>🧪 Тесты (стекл. ящик)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <widget class="QWidget" name="tabDishes">
+       <attribute name="title">
+        <string>Блюда</string>
+       </attribute>
+       <layout class="QVBoxLayout">
+        <item>
+         <layout class="QHBoxLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Название:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="editDishName">
+            <property name="placeholderText">
+             <string>Борщ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Категория:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="editDishCat">
+            <property name="placeholderText">
+             <string>Супы</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Цена:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="editDishPrice">
+            <property name="placeholderText">
+             <string>5.50</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout">
+          <item>
+           <widget class="QPushButton" name="btnAddDish">
+            <property name="text">
+             <string>➕ Добавить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnUpdateDish">
+            <property name="text">
+             <string>✏️ Изменить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnRemoveDish">
+            <property name="text">
+             <string>🗑️ Удалить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnSortDishes">
+            <property name="text">
+             <string>🔃 Сорт. по цене</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer>
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableDishes">
+          <property name="editTriggers">
+           <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>Название</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Категория</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Цена</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabOrders">
+       <attribute name="title">
+        <string>Заказы</string>
+       </attribute>
+       <layout class="QVBoxLayout">
+        <item>
+         <layout class="QHBoxLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>№ Заказа:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="editOrderNum">
+            <property name="placeholderText">
+             <string>1</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Стол:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="editOrderTable">
+            <property name="placeholderText">
+             <string>3</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Блюдо:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="editOrderDish">
+            <property name="placeholderText">
+             <string>Борщ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Кол-во:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="editOrderQty">
+            <property name="placeholderText">
+             <string>2</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout">
+          <item>
+           <widget class="QPushButton" name="btnAddOrder">
+            <property name="text">
+             <string>➕ Добавить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnUpdateOrder">
+            <property name="text">
+             <string>✏️ Изменить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnRemoveOrder">
+            <property name="text">
+             <string>🗑️ Удалить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer>
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableOrders">
+          <property name="editTriggers">
+           <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>№ Заказа</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Стол</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Блюдо</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Кол-во</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabAnalytics">
+       <attribute name="title">
+        <string>Аналитика</string>
+       </attribute>
+       <layout class="QVBoxLayout">
+        <item>
+         <layout class="QHBoxLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>№ Заказа:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="editAnalyticsNum">
+            <property name="placeholderText">
+             <string>1</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnOrderTotal">
+            <property name="text">
+             <string>Сумма заказа</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Категория:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="editAnalyticsCat">
+            <property name="placeholderText">
+             <string>Горячие блюда</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnMostPopular">
+            <property name="text">
+             <string>Популярное в кат.</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnBestOrder">
+            <property name="text">
+             <string>Лучший заказ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnSortOrders">
+            <property name="text">
+             <string>Заказы по сумме ↓</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelAnalytics">
+          <property name="font">
+           <font>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Результат: —</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableAnalytics">
+          <property name="editTriggers">
+           <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+          </property>
+          <column>
+           <property name="text">
+            <string>№ Заказа</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Сумма (руб.)</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabTests">
+       <attribute name="title">
+        <string>Тесты</string>
+       </attribute>
+       <layout class="QVBoxLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Нажмите кнопку «Тесты (стекл. ящик)» — результаты появятся здесь и сохранятся в XML.</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableTests">
+          <property name="editTriggers">
+           <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+          </property>
+          <column>
+           <property name="text">
+            <string>Тест</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Эталон</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>ok?</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

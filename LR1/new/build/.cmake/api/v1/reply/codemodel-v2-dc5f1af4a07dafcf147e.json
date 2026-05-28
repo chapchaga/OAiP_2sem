@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LR1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "LR1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LR1-Debug-3490eab2289921f23031.json",
+					"name" : "LR1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LR1_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LR1_autogen-Debug-05aa4b05bfb9a8af52b1.json",
+					"name" : "LR1_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LR1_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LR1_autogen_timestamp_deps-Debug-6e2f419c5cad32d74e2e.json",
+					"name" : "LR1_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/user/study/oaip/2sem/LR1/new/build",
+		"source" : "/home/user/study/oaip/2sem/LR1/new"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

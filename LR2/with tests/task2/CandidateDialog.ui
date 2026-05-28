@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CandidateDialog</class>
+ <widget class="QDialog" name="CandidateDialog">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>400</width><height>300</height></rect>
+  </property>
+  <property name="windowTitle"><string>Кандидат</string></property>
+  <layout class="QFormLayout">
+   <item row="0" column="0"><widget class="QLabel"><property name="text"><string>Номер округа:</string></property></widget></item>
+   <item row="0" column="1"><widget class="QSpinBox" name="spinDistrict"><property name="minimum"><number>1</number></property><property name="maximum"><number>9999</number></property></widget></item>
+   <item row="1" column="0"><widget class="QLabel"><property name="text"><string>ФИО:</string></property></widget></item>
+   <item row="1" column="1"><widget class="QLineEdit" name="editName"/></item>
+   <item row="2" column="0"><widget class="QLabel"><property name="text"><string>Партия:</string></property></widget></item>
+   <item row="2" column="1"><widget class="QLineEdit" name="editParty"/></item>
+   <item row="3" column="0"><widget class="QLabel"><property name="text"><string>Возраст:</string></property></widget></item>
+   <item row="3" column="1"><widget class="QSpinBox" name="spinAge"><property name="minimum"><number>18</number></property><property name="maximum"><number>120</number></property></widget></item>
+   <item row="4" column="0"><widget class="QLabel"><property name="text"><string>Профессия:</string></property></widget></item>
+   <item row="4" column="1"><widget class="QLineEdit" name="editProfession"/></item>
+   <item row="5" column="0"><widget class="QLabel"><property name="text"><string>Доход (руб.):</string></property></widget></item>
+   <item row="5" column="1"><widget class="QDoubleSpinBox" name="spinIncome"><property name="minimum"><number>0</number></property><property name="maximum"><number>99999999</number></property><property name="decimals"><number>2</number></property></widget></item>
+   <item row="6" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation"><enum>Qt::Horizontal</enum></property>
+     <property name="standardButtons"><set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set></property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <connections>
+  <connection><sender>buttonBox</sender><signal>accepted()</signal><receiver>CandidateDialog</receiver><slot>accept()</slot></connection>
+  <connection><sender>buttonBox</sender><signal>rejected()</signal><receiver>CandidateDialog</receiver><slot>reject()</slot></connection>
+ </connections>
+</ui>

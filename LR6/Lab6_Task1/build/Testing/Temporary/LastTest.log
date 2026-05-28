@@ -1,0 +1,118 @@
+Start testing: May 19 11:16 +03
+----------------------------------------------------------
+1/1 Testing: lab6_functional_tests
+1/1 Test: lab6_functional_tests
+Command: "/Users/yaroslav/Desktop/BSUIR/OAiP/2sem/LR6/Lab6_Task1/build/test_lab6"
+Directory: /Users/yaroslav/Desktop/BSUIR/OAiP/2sem/LR6/Lab6_Task1/build
+"lab6_functional_tests" start time: May 19 11:16 +03
+Output:
+----------------------------------------------------------
+╔══════════════════════════════════════════╗
+║  Функциональные тесты Lab6_Task1         ║
+╚══════════════════════════════════════════╝
+
+=== Task 1.1 — Инициализация через строку инициализации ===
+  [PASS] size == 44
+  [PASS] price == 2499.99
+  [PASS] gender == 'M'
+  [PASS] inStock == true
+  [PASS] brand == Adidas
+  [PASS] article[0] == 2001
+  [PASS] article[4] == 2005
+
+=== Task 1.2 — Присвоение полей по одному ===
+  [PASS] size == 38
+  [PASS] price == 999.50
+  [PASS] gender == 'F'
+  [PASS] inStock == false
+  [PASS] brand == Zara
+  [PASS] article[2] == 3003
+
+=== Task 1.4 — Доступ через указатель ===
+  [PASS] ptr->size == 50
+  [PASS] ptr->price == 5100.75
+  [PASS] ptr == &o (same object)
+  [PASS] brand == Gucci
+  [PASS] article[4] == 7005
+
+=== Task 1.5 — Доступ через ссылку ===
+  [PASS] ref.size == 36
+  [PASS] ref aliases o (size)
+  [PASS] ref aliases o (brand)
+  [PASS] ref.inStock == false
+  [PASS] article[4] == 9005
+
+=== Task 1 — Форматирование структуры ===
+  [PASS] contains size
+  [PASS] contains gender
+  [PASS] contains true
+  [PASS] contains brand
+  [PASS] contains articles
+  [PASS] custom sep present
+
+=== Task 1 — Граничные случаи бренда ===
+  [PASS] empty brand
+  [PASS] long brand stored
+  [PASS] null terminator intact
+  [PASS] overlong brand truncated
+
+=== Task 2.1 — Текст посимвольно ===
+  [PASS] text roundtrip
+
+=== Task 2.2 — Массив с разделителем ===
+  [PASS] count matches
+  [PASS] first element
+  [PASS] negative element
+  [PASS] zero element
+  [PASS] large element
+
+=== Task 2.3 — Структура в текстовый файл ===
+  [PASS] size roundtrip
+  [PASS] gender roundtrip
+  [PASS] inStock roundtrip
+  [PASS] brand roundtrip
+  [PASS] article[0]
+  [PASS] article[4]
+
+=== Task 2.3 — Несколько структур (дозапись) ===
+  [PASS] two records read
+  [PASS] first brand == Gap
+  [PASS] second brand == Boss
+  [PASS] first size == 40
+  [PASS] second size == 52
+  [PASS] first inStock false
+  [PASS] second inStock true
+
+=== Task 2.4 — Структура в бинарный файл ===
+  [PASS] size  roundtrip
+  [PASS] price roundtrip
+  [PASS] brand roundtrip
+  [PASS] article[2] == 333
+  [PASS] sizeof preserved
+
+=== Task 2.4 — Несколько структур бинарно (дозапись) ===
+  [PASS] two binary records
+  [PASS] first == Mango
+  [PASS] second == Armani
+  [PASS] second price
+
+=== Task 2.5 — Построчная запись и чтение ===
+  [PASS] line count
+  [PASS] line 1 match
+  [PASS] line 2 match
+  [PASS] line 3 match
+
+=== Task 2 — Чтение несуществующего файла ===
+  [PASS] file not open
+
+──────────────────────────────────────────────
+Результат: 66 прошли, 0 упали
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"lab6_functional_tests" end time: May 19 11:16 +03
+"lab6_functional_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 19 11:16 +03

@@ -1,0 +1,5 @@
+/home/user/study/oaip/2sem/LR1/new/build/CMakeFiles/LR1.dir
+/home/user/study/oaip/2sem/LR1/new/build/CMakeFiles/edit_cache.dir
+/home/user/study/oaip/2sem/LR1/new/build/CMakeFiles/rebuild_cache.dir
+/home/user/study/oaip/2sem/LR1/new/build/CMakeFiles/LR1_autogen_timestamp_deps.dir
+/home/user/study/oaip/2sem/LR1/new/build/CMakeFiles/LR1_autogen.dir

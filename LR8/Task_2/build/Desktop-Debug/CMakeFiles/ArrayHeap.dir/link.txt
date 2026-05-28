@@ -1,0 +1,2 @@
+/usr/bin/ar qc libArrayHeap.a CMakeFiles/ArrayHeap.dir/ArrayHeap_autogen/mocs_compilation.cpp.o CMakeFiles/ArrayHeap.dir/ArrayHeap/ArrayHeap.cpp.o
+/usr/bin/ranlib libArrayHeap.a

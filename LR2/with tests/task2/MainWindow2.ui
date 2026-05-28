@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow2</class>
+ <widget class="QMainWindow" name="MainWindow2">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>1000</width><height>650</height></rect>
+  </property>
+  <property name="windowTitle"><string>Задание 2 — Регистрация кандидатов (Вариант 22)</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="toolbarLayout">
+      <item><widget class="QPushButton" name="btnOpen"><property name="text"><string>Открыть...</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnSave"><property name="text"><string>Сохранить</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnSaveAs"><property name="text"><string>Сохранить как...</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnAdd"><property name="text"><string>Добавить</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnEdit"><property name="text"><string>Изменить</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnDelete"><property name="text"><string>Удалить</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnSort"><property name="text"><string>Сортировать...</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnSearch"><property name="text"><string>Поиск</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnBulletin"><property name="text"><string>Бюллетень</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnRunTests"><property name="text"><string>Тесты (xlsx)</string></property></widget></item>
+      <item>
+       <spacer name="spacerToolbar">
+        <property name="orientation"><enum>Qt::Horizontal</enum></property>
+        <property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="searchLayout">
+      <item><widget class="QLabel" name="labelSearch"><property name="text"><string>Поиск по ФИО / партии:</string></property></widget></item>
+      <item><widget class="QLineEdit" name="editSearch"><property name="placeholderText"><string>Введите текст для поиска...</string></property></widget></item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="selectionBehavior"><enum>QAbstractItemView::SelectRows</enum></property>
+      <property name="editTriggers"><set>QAbstractItemView::NoEditTriggers</set></property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelStatus">
+      <property name="text"><string>Готово. Откройте файл или добавьте кандидатов.</string></property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+</ui>

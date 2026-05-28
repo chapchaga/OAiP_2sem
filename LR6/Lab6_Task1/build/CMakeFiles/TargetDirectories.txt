@@ -1,0 +1,9 @@
+/Users/yaroslav/Desktop/BSUIR/OAiP/2sem/LR6/Lab6_Task1/build/CMakeFiles/Lab6_Task1.dir
+/Users/yaroslav/Desktop/BSUIR/OAiP/2sem/LR6/Lab6_Task1/build/CMakeFiles/test_lab6.dir
+/Users/yaroslav/Desktop/BSUIR/OAiP/2sem/LR6/Lab6_Task1/build/CMakeFiles/test.dir
+/Users/yaroslav/Desktop/BSUIR/OAiP/2sem/LR6/Lab6_Task1/build/CMakeFiles/edit_cache.dir
+/Users/yaroslav/Desktop/BSUIR/OAiP/2sem/LR6/Lab6_Task1/build/CMakeFiles/rebuild_cache.dir
+/Users/yaroslav/Desktop/BSUIR/OAiP/2sem/LR6/Lab6_Task1/build/CMakeFiles/Lab6_Task1_autogen_timestamp_deps.dir
+/Users/yaroslav/Desktop/BSUIR/OAiP/2sem/LR6/Lab6_Task1/build/CMakeFiles/Lab6_Task1_autogen.dir
+/Users/yaroslav/Desktop/BSUIR/OAiP/2sem/LR6/Lab6_Task1/build/CMakeFiles/test_lab6_autogen_timestamp_deps.dir
+/Users/yaroslav/Desktop/BSUIR/OAiP/2sem/LR6/Lab6_Task1/build/CMakeFiles/test_lab6_autogen.dir

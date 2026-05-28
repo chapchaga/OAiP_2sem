@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>900</width><height>680</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lab7 Task2 — Binary Search Tree (Library)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+
+    <item>
+     <layout class="QHBoxLayout">
+
+      <item>
+       <layout class="QVBoxLayout">
+
+        <item>
+         <widget class="QGroupBox" name="groupAdd">
+          <property name="title"><string>Add book</string></property>
+          <layout class="QFormLayout">
+           <item row="0" column="0"><widget class="QLabel"><property name="text"><string>Key:</string></property></widget></item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="spinKey">
+             <property name="minimum"><number>1</number></property>
+             <property name="maximum"><number>99999</number></property>
+             <property name="value"><number>11</number></property>
+            </widget>
+           </item>
+           <item row="1" column="0"><widget class="QLabel"><property name="text"><string>Author:</string></property></widget></item>
+           <item row="1" column="1"><widget class="QLineEdit" name="editAuthor"><property name="placeholderText"><string>Last F.M.</string></property></widget></item>
+           <item row="2" column="0"><widget class="QLabel"><property name="text"><string>Title:</string></property></widget></item>
+           <item row="2" column="1"><widget class="QLineEdit" name="editTitle"><property name="placeholderText"><string>Book title</string></property></widget></item>
+           <item row="3" column="0"><widget class="QLabel"><property name="text"><string>Year:</string></property></widget></item>
+           <item row="3" column="1">
+            <widget class="QSpinBox" name="spinYear">
+             <property name="minimum"><number>1000</number></property>
+             <property name="maximum"><number>2100</number></property>
+             <property name="value"><number>2024</number></property>
+            </widget>
+           </item>
+           <item row="4" column="0"><widget class="QLabel"><property name="text"><string>Language:</string></property></widget></item>
+           <item row="4" column="1"><widget class="QLineEdit" name="editLanguage"><property name="placeholderText"><string>English</string></property></widget></item>
+           <item row="5" column="0" colspan="2">
+            <widget class="QPushButton" name="btnAdd">
+             <property name="text"><string>Add to tree</string></property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+
+        <item>
+         <widget class="QGroupBox" name="groupSearch">
+          <property name="title"><string>Find / Remove by key</string></property>
+          <layout class="QVBoxLayout">
+           <item>
+            <layout class="QHBoxLayout">
+             <item><widget class="QLabel"><property name="text"><string>Key:</string></property></widget></item>
+             <item>
+              <widget class="QSpinBox" name="spinSearchKey">
+               <property name="minimum"><number>1</number></property>
+               <property name="maximum"><number>99999</number></property>
+               <property name="value"><number>5</number></property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout">
+             <item><widget class="QPushButton" name="btnFind"><property name="text"><string>Find</string></property></widget></item>
+             <item><widget class="QPushButton" name="btnRemove"><property name="text"><string>Remove</string></property></widget></item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+
+        <item>
+         <widget class="QGroupBox" name="groupTree">
+          <property name="title"><string>Tree operations</string></property>
+          <layout class="QVBoxLayout">
+           <item><widget class="QPushButton" name="btnBalance"><property name="text"><string>Balance tree</string></property></widget></item>
+           <item><widget class="QPushButton" name="btnClear"><property name="text"><string>Clear tree</string></property></widget></item>
+          </layout>
+         </widget>
+        </item>
+
+        <item>
+         <widget class="QGroupBox" name="groupTraverse">
+          <property name="title"><string>Traversal</string></property>
+          <layout class="QVBoxLayout">
+           <item><widget class="QPushButton" name="btnPreOrder"><property name="text"><string>Pre-order (direct)</string></property></widget></item>
+           <item><widget class="QPushButton" name="btnInOrder"><property name="text"><string>In-order (ascending)</string></property></widget></item>
+           <item><widget class="QPushButton" name="btnPostOrder"><property name="text"><string>Post-order (reverse)</string></property></widget></item>
+          </layout>
+         </widget>
+        </item>
+
+        <item>
+         <widget class="QGroupBox" name="groupVariant">
+          <property name="title"><string>Variant task</string></property>
+          <layout class="QVBoxLayout">
+           <item><widget class="QPushButton" name="btnNodesPerLevel"><property name="text"><string>Nodes per level</string></property></widget></item>
+          </layout>
+         </widget>
+        </item>
+
+        <item><spacer><property name="orientation"><enum>Qt::Vertical</enum></property></spacer></item>
+
+       </layout>
+      </item>
+
+      <item>
+       <layout class="QVBoxLayout">
+        <item>
+         <widget class="QLabel"><property name="text"><string>Tree structure (root → children):</string></property></widget>
+        </item>
+        <item>
+         <widget class="QTreeWidget" name="treeWidget">
+          <property name="alternatingRowColors"><bool>true</bool></property>
+          <column><property name="text"><string>Key</string></property></column>
+          <column><property name="text"><string>Author</string></property></column>
+          <column><property name="text"><string>Title</string></property></column>
+          <column><property name="text"><string>Year</string></property></column>
+          <column><property name="text"><string>Language</string></property></column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel"><property name="text"><string>Output / Traversal log:</string></property></widget>
+        </item>
+        <item>
+         <widget class="QPlainTextEdit" name="memoOutput">
+          <property name="readOnly"><bool>true</bool></property>
+          <property name="maximumHeight"><number>180</number></property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+
+     </layout>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,11 @@
+/Users/yaroslav/study/OAiP/2sem/LR8/Task_2/build/Desktop-Debug/CMakeFiles/ArrayHeap.dir
+/Users/yaroslav/study/OAiP/2sem/LR8/Task_2/build/Desktop-Debug/CMakeFiles/ListHeap.dir
+/Users/yaroslav/study/OAiP/2sem/LR8/Task_2/build/Desktop-Debug/CMakeFiles/HeapApp.dir
+/Users/yaroslav/study/OAiP/2sem/LR8/Task_2/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/Users/yaroslav/study/OAiP/2sem/LR8/Task_2/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/Users/yaroslav/study/OAiP/2sem/LR8/Task_2/build/Desktop-Debug/CMakeFiles/ArrayHeap_autogen_timestamp_deps.dir
+/Users/yaroslav/study/OAiP/2sem/LR8/Task_2/build/Desktop-Debug/CMakeFiles/ArrayHeap_autogen.dir
+/Users/yaroslav/study/OAiP/2sem/LR8/Task_2/build/Desktop-Debug/CMakeFiles/ListHeap_autogen_timestamp_deps.dir
+/Users/yaroslav/study/OAiP/2sem/LR8/Task_2/build/Desktop-Debug/CMakeFiles/ListHeap_autogen.dir
+/Users/yaroslav/study/OAiP/2sem/LR8/Task_2/build/Desktop-Debug/CMakeFiles/HeapApp_autogen_timestamp_deps.dir
+/Users/yaroslav/study/OAiP/2sem/LR8/Task_2/build/Desktop-Debug/CMakeFiles/HeapApp_autogen.dir

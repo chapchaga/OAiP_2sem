@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Лабораторная №6 — Вариант 20 — Одежда</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="rootLayout" stretch="0,0,1,0">
+    <item>
+     <widget class="QLabel" name="titleLabel">
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string>padding: 6px; background: #2b2d42; color: #edf2f4; border-radius: 4px;</string>
+      </property>
+      <property name="text">
+       <string>Лабораторная работа №6</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="navLayout">
+      <item>
+       <widget class="QLabel" name="menuLabel">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Раздел меню:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="menuCombo">
+        <item>
+         <property name="text">
+          <string>1. Задание 1 — Структура (переменные / указатель / ссылка)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2.1 — Текстовый файл (посимвольно)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2.2 — Массив в файл (потоково)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2.3 — Структура в текстовый файл</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2.4 — Структура в бинарный файл</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2.5 — Строки в текстовый файл (построчно)</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <spacer>
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="pageTask1">
+       <layout class="QVBoxLayout">
+        <item>
+         <layout class="QHBoxLayout">
+          <item>
+           <widget class="QGroupBox" name="groupInput1">
+            <property name="title">
+             <string>Ввод данных структуры (для пункта 3)</string>
+            </property>
+            <layout class="QFormLayout">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Размер (int):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="t1_size">
+               <property name="placeholderText">
+                <string>42</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Цена (double):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="t1_price">
+               <property name="placeholderText">
+                <string>1299.99</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Пол (char: M/F/U):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="t1_gender">
+               <property name="maxLength">
+                <number>1</number>
+               </property>
+               <property name="placeholderText">
+                <string>M</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>В наличии:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QCheckBox" name="t1_stock">
+               <property name="text">
+                <string>Да</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Бренд (char[50]):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLineEdit" name="t1_brand">
+               <property name="maxLength">
+                <number>49</number>
+               </property>
+               <property name="placeholderText">
+                <string>Nike</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Артикулы (5 чисел):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLineEdit" name="t1_articles">
+               <property name="placeholderText">
+                <string>1001 1002 1003 1004 1005</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupButtons1">
+            <property name="title">
+             <string>Пункты задания 1</string>
+            </property>
+            <layout class="QVBoxLayout">
+             <item>
+              <widget class="QPushButton" name="btnT1_1">
+               <property name="text">
+                <string>1. Явная инициализация</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnT1_2">
+               <property name="text">
+                <string>2. Присвоение полей по одному</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnT1_3">
+               <property name="text">
+                <string>3. Ввод пользователя (из формы)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnT1_4">
+               <property name="text">
+                <string>4. Работа через указатель</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnT1_5">
+               <property name="text">
+                <string>5. Работа через ссылку</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer>
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageTask21">
+       <layout class="QVBoxLayout">
+        <item>
+         <widget class="QGroupBox" name="group21">
+          <property name="title">
+           <string>2.1 — Посимвольная запись/чтение текстового файла (ФамилияЛаб20.txt)</string>
+          </property>
+          <layout class="QVBoxLayout">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Введите абзац текста:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="t21_input">
+             <property name="placeholderText">
+              <string>Введите текст здесь...</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout">
+             <item>
+              <widget class="QPushButton" name="btnT21_save">
+               <property name="text">
+                <string>Записать посимвольно в файл</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnT21_load">
+               <property name="text">
+                <string>Считать посимвольно из файла</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageTask22">
+       <layout class="QVBoxLayout">
+        <item>
+         <widget class="QGroupBox" name="group22">
+          <property name="title">
+           <string>2.2 — Массив int в файл потоково, разделитель ' (ФамилияЛаб20_0.txt)</string>
+          </property>
+          <layout class="QVBoxLayout">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Элементы массива (через пробел):</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="t22_input">
+             <property name="placeholderText">
+              <string>10 20 30 40 50</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout">
+             <item>
+              <widget class="QPushButton" name="btnT22_save">
+               <property name="text">
+                <string>Записать массив в файл (&lt;&lt;)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnT22_load">
+               <property name="text">
+                <string>Считать массив из файла (&gt;&gt;)</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageTask23">
+       <layout class="QVBoxLayout">
+        <item>
+         <widget class="QGroupBox" name="group23">
+          <property name="title">
+           <string>2.3 — Структура в текстовый файл (дозапись, ФамилияЛаб20_1.txt)</string>
+          </property>
+          <layout class="QVBoxLayout">
+           <item>
+            <layout class="QFormLayout">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Размер:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="t23_size">
+               <property name="placeholderText">
+                <string>42</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Цена:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="t23_price">
+               <property name="placeholderText">
+                <string>999.99</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Пол (M/F/U):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="t23_gender">
+               <property name="maxLength">
+                <number>1</number>
+               </property>
+               <property name="placeholderText">
+                <string>M</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>В наличии:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QCheckBox" name="t23_stock">
+               <property name="text">
+                <string>Да</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Бренд:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLineEdit" name="t23_brand">
+               <property name="maxLength">
+                <number>49</number>
+               </property>
+               <property name="placeholderText">
+                <string>Nike</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Артикулы (5 чисел):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLineEdit" name="t23_articles">
+               <property name="placeholderText">
+                <string>1 2 3 4 5</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout">
+             <item>
+              <widget class="QPushButton" name="btnT23_save">
+               <property name="text">
+                <string>Дозаписать структуру в текстовый файл</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnT23_load">
+               <property name="text">
+                <string>Считать все структуры из файла</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageTask24">
+       <layout class="QVBoxLayout">
+        <item>
+         <widget class="QGroupBox" name="group24">
+          <property name="title">
+           <string>2.4 — Структура в бинарный файл (дозапись, ФамилияЛаб20_2.bin)</string>
+          </property>
+          <layout class="QVBoxLayout">
+           <item>
+            <layout class="QFormLayout">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Размер:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="t24_size">
+               <property name="placeholderText">
+                <string>42</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Цена:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="t24_price">
+               <property name="placeholderText">
+                <string>999.99</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Пол (M/F/U):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="t24_gender">
+               <property name="maxLength">
+                <number>1</number>
+               </property>
+               <property name="placeholderText">
+                <string>M</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>В наличии:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QCheckBox" name="t24_stock">
+               <property name="text">
+                <string>Да</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Бренд:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLineEdit" name="t24_brand">
+               <property name="maxLength">
+                <number>49</number>
+               </property>
+               <property name="placeholderText">
+                <string>Nike</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Артикулы (5 чисел):</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLineEdit" name="t24_articles">
+               <property name="placeholderText">
+                <string>1 2 3 4 5</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout">
+             <item>
+              <widget class="QPushButton" name="btnT24_save">
+               <property name="text">
+                <string>Дозаписать структуру в бинарный файл</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnT24_load">
+               <property name="text">
+                <string>Считать все структуры из бинарного файла</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageTask25">
+       <layout class="QVBoxLayout">
+        <item>
+         <widget class="QGroupBox" name="group25">
+          <property name="title">
+           <string>2.5 — Построчная дозапись/чтение строк (ФамилияЛаб20_3.txt)</string>
+          </property>
+          <layout class="QVBoxLayout">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Введите предложение (будет дописано в файл как новая строка):</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="t25_input">
+             <property name="placeholderText">
+              <string>Например: Сегодня хорошая погода</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout">
+             <item>
+              <widget class="QPushButton" name="btnT25_save">
+               <property name="text">
+                <string>Дозаписать строку в файл</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnT25_load">
+               <property name="text">
+                <string>Считать все строки из файла</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupOutput">
+      <property name="title">
+       <string>Вывод</string>
+      </property>
+      <layout class="QVBoxLayout">
+       <item>
+        <layout class="QHBoxLayout">
+         <item>
+          <widget class="QLabel" name="filePathLabel">
+           <property name="styleSheet">
+            <string>color: gray; font-size: 11px;</string>
+           </property>
+           <property name="text">
+            <string>Файлы сохраняются рядом с исполняемым файлом</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer>
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnClear">
+           <property name="text">
+            <string>Очистить вывод</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="outputEdit">
+         <property name="font">
+          <font>
+           <family>Courier New</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnClear</sender>
+   <signal>clicked()</signal>
+   <receiver>outputEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>menuCombo</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onMenuChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnT1_1</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onTask1_1Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnT1_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onTask1_2Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnT1_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onTask1_3Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnT1_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onTask1_4Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnT1_5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onTask1_5Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnT21_save</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onTask2_TextSaveClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnT21_load</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onTask2_TextLoadClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnT22_save</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onTask2_ArraySaveClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnT22_load</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onTask2_ArrayLoadClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnT23_save</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onTask2_StructTxtSaveClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnT23_load</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onTask2_StructTxtLoadClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnT24_save</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onTask2_StructBinSaveClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnT24_load</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onTask2_StructBinLoadClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnT25_save</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onTask2_LineSaveClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnT25_load</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onTask2_LineLoadClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onMenuChanged(int)</slot>
+  <slot>onTask1_1Clicked()</slot>
+  <slot>onTask1_2Clicked()</slot>
+  <slot>onTask1_3Clicked()</slot>
+  <slot>onTask1_4Clicked()</slot>
+  <slot>onTask1_5Clicked()</slot>
+  <slot>onTask2_TextSaveClicked()</slot>
+  <slot>onTask2_TextLoadClicked()</slot>
+  <slot>onTask2_ArraySaveClicked()</slot>
+  <slot>onTask2_ArrayLoadClicked()</slot>
+  <slot>onTask2_StructTxtSaveClicked()</slot>
+  <slot>onTask2_StructTxtLoadClicked()</slot>
+  <slot>onTask2_StructBinSaveClicked()</slot>
+  <slot>onTask2_StructBinLoadClicked()</slot>
+  <slot>onTask2_LineSaveClicked()</slot>
+  <slot>onTask2_LineLoadClicked()</slot>
+ </slots>
+</ui>

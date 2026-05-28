@@ -1,0 +1,16 @@
+{
+ "version": "0.2.0",
+ "configurations": [
+  {
+   "name": "Run C++",
+   "type": "cppdbg",
+   "request": "launch",
+   "program": "${workspaceFolder}/Task_1",
+   "args": [],
+   "cwd": "${workspaceFolder}",
+   "externalConsole": true,
+   "MIMode": "lldb",
+   "preLaunchTask": "build with g++"
+  }
+ ]
+}

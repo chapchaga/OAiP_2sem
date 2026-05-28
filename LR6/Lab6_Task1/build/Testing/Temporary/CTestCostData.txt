@@ -1,0 +1,2 @@
+lab6_functional_tests 1 0.00789
+---

@@ -1,0 +1,324 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'tst_mystring.cpp'
+**
+** Created by: The Qt Meta Object Compiler version 69 (Qt 6.11.0)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include <QtCore/qmetatype.h>
+
+#include <QtCore/qtmochelpers.h>
+
+#include <memory>
+
+
+#include <QtCore/qxptype_traits.h>
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'tst_mystring.cpp' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 69
+#error "This file was generated using the moc from 6.11.0. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+#ifndef Q_CONSTINIT
+#define Q_CONSTINIT
+#endif
+
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_DEPRECATED
+QT_WARNING_DISABLE_GCC("-Wuseless-cast")
+namespace {
+struct qt_meta_tag_ZN12TestMyStringE_t {};
+} // unnamed namespace
+
+template <> constexpr inline auto TestMyString::qt_create_metaobjectdata<qt_meta_tag_ZN12TestMyStringE_t>()
+{
+    namespace QMC = QtMocConstants;
+    QtMocHelpers::StringRefStorage qt_stringData {
+        "TestMyString",
+        "test_strlen_basic",
+        "",
+        "test_strlen_empty",
+        "test_strlen_single",
+        "test_memcpy_basic",
+        "test_memcpy_partial",
+        "test_memcpy_zero_bytes",
+        "test_memmove_no_overlap",
+        "test_memmove_overlap_right",
+        "test_memmove_overlap_left",
+        "test_memset_basic",
+        "test_memset_zero",
+        "test_memcmp_equal",
+        "test_memcmp_less",
+        "test_memcmp_greater",
+        "test_memcmp_zero_n",
+        "test_strcpy_basic",
+        "test_strcpy_empty",
+        "test_strncpy_copies_n",
+        "test_strncpy_pads_nul",
+        "test_strcat_basic",
+        "test_strcat_empty_src",
+        "test_strncat_n",
+        "test_strncat_zero",
+        "test_strcmp_equal",
+        "test_strcmp_less",
+        "test_strcmp_greater",
+        "test_strcmp_prefix",
+        "test_strncmp_equal_prefix",
+        "test_strncmp_differ",
+        "test_strncmp_zero",
+        "test_strcoll_equal",
+        "test_strxfrm_returns_length",
+        "test_strtok_basic",
+        "test_strtok_multi_delim",
+        "test_strtok_no_delim",
+        "test_strerror_not_null",
+        "test_default_ctor",
+        "test_cstr_ctor",
+        "test_fill_ctor",
+        "test_copy_ctor_deep",
+        "test_copy_assign_deep",
+        "test_self_assign",
+        "test_concat_operator",
+        "test_concat_assign",
+        "test_cmp_operators",
+        "test_subscript",
+        "test_at_throws",
+        "test_iterator_forward",
+        "test_range_for",
+        "test_iterator_distance",
+        "test_const_iterator",
+        "test_reserve",
+        "test_resize_extend",
+        "test_resize_shrink",
+        "test_empty"
+    };
+
+    QtMocHelpers::UintData qt_methods {
+        // Slot 'test_strlen_basic'
+        QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strlen_empty'
+        QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strlen_single'
+        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_memcpy_basic'
+        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_memcpy_partial'
+        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_memcpy_zero_bytes'
+        QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_memmove_no_overlap'
+        QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_memmove_overlap_right'
+        QtMocHelpers::SlotData<void()>(9, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_memmove_overlap_left'
+        QtMocHelpers::SlotData<void()>(10, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_memset_basic'
+        QtMocHelpers::SlotData<void()>(11, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_memset_zero'
+        QtMocHelpers::SlotData<void()>(12, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_memcmp_equal'
+        QtMocHelpers::SlotData<void()>(13, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_memcmp_less'
+        QtMocHelpers::SlotData<void()>(14, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_memcmp_greater'
+        QtMocHelpers::SlotData<void()>(15, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_memcmp_zero_n'
+        QtMocHelpers::SlotData<void()>(16, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strcpy_basic'
+        QtMocHelpers::SlotData<void()>(17, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strcpy_empty'
+        QtMocHelpers::SlotData<void()>(18, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strncpy_copies_n'
+        QtMocHelpers::SlotData<void()>(19, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strncpy_pads_nul'
+        QtMocHelpers::SlotData<void()>(20, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strcat_basic'
+        QtMocHelpers::SlotData<void()>(21, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strcat_empty_src'
+        QtMocHelpers::SlotData<void()>(22, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strncat_n'
+        QtMocHelpers::SlotData<void()>(23, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strncat_zero'
+        QtMocHelpers::SlotData<void()>(24, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strcmp_equal'
+        QtMocHelpers::SlotData<void()>(25, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strcmp_less'
+        QtMocHelpers::SlotData<void()>(26, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strcmp_greater'
+        QtMocHelpers::SlotData<void()>(27, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strcmp_prefix'
+        QtMocHelpers::SlotData<void()>(28, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strncmp_equal_prefix'
+        QtMocHelpers::SlotData<void()>(29, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strncmp_differ'
+        QtMocHelpers::SlotData<void()>(30, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strncmp_zero'
+        QtMocHelpers::SlotData<void()>(31, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strcoll_equal'
+        QtMocHelpers::SlotData<void()>(32, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strxfrm_returns_length'
+        QtMocHelpers::SlotData<void()>(33, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strtok_basic'
+        QtMocHelpers::SlotData<void()>(34, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strtok_multi_delim'
+        QtMocHelpers::SlotData<void()>(35, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strtok_no_delim'
+        QtMocHelpers::SlotData<void()>(36, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_strerror_not_null'
+        QtMocHelpers::SlotData<void()>(37, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_default_ctor'
+        QtMocHelpers::SlotData<void()>(38, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_cstr_ctor'
+        QtMocHelpers::SlotData<void()>(39, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_fill_ctor'
+        QtMocHelpers::SlotData<void()>(40, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_copy_ctor_deep'
+        QtMocHelpers::SlotData<void()>(41, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_copy_assign_deep'
+        QtMocHelpers::SlotData<void()>(42, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_self_assign'
+        QtMocHelpers::SlotData<void()>(43, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_concat_operator'
+        QtMocHelpers::SlotData<void()>(44, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_concat_assign'
+        QtMocHelpers::SlotData<void()>(45, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_cmp_operators'
+        QtMocHelpers::SlotData<void()>(46, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_subscript'
+        QtMocHelpers::SlotData<void()>(47, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_at_throws'
+        QtMocHelpers::SlotData<void()>(48, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_iterator_forward'
+        QtMocHelpers::SlotData<void()>(49, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_range_for'
+        QtMocHelpers::SlotData<void()>(50, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_iterator_distance'
+        QtMocHelpers::SlotData<void()>(51, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_const_iterator'
+        QtMocHelpers::SlotData<void()>(52, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_reserve'
+        QtMocHelpers::SlotData<void()>(53, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_resize_extend'
+        QtMocHelpers::SlotData<void()>(54, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_resize_shrink'
+        QtMocHelpers::SlotData<void()>(55, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'test_empty'
+        QtMocHelpers::SlotData<void()>(56, 2, QMC::AccessPrivate, QMetaType::Void),
+    };
+    QtMocHelpers::UintData qt_properties {
+    };
+    QtMocHelpers::UintData qt_enums {
+    };
+    return QtMocHelpers::metaObjectData<TestMyString, qt_meta_tag_ZN12TestMyStringE_t>(QMC::MetaObjectFlag{}, qt_stringData,
+            qt_methods, qt_properties, qt_enums);
+}
+Q_CONSTINIT const QMetaObject TestMyString::staticMetaObject = { {
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN12TestMyStringE_t>.stringdata,
+    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN12TestMyStringE_t>.data,
+    qt_static_metacall,
+    nullptr,
+    qt_staticMetaObjectRelocatingContent<qt_meta_tag_ZN12TestMyStringE_t>.metaTypes,
+    nullptr
+} };
+
+void TestMyString::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    auto *_t = static_cast<TestMyString *>(_o);
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        switch (_id) {
+        case 0: _t->test_strlen_basic(); break;
+        case 1: _t->test_strlen_empty(); break;
+        case 2: _t->test_strlen_single(); break;
+        case 3: _t->test_memcpy_basic(); break;
+        case 4: _t->test_memcpy_partial(); break;
+        case 5: _t->test_memcpy_zero_bytes(); break;
+        case 6: _t->test_memmove_no_overlap(); break;
+        case 7: _t->test_memmove_overlap_right(); break;
+        case 8: _t->test_memmove_overlap_left(); break;
+        case 9: _t->test_memset_basic(); break;
+        case 10: _t->test_memset_zero(); break;
+        case 11: _t->test_memcmp_equal(); break;
+        case 12: _t->test_memcmp_less(); break;
+        case 13: _t->test_memcmp_greater(); break;
+        case 14: _t->test_memcmp_zero_n(); break;
+        case 15: _t->test_strcpy_basic(); break;
+        case 16: _t->test_strcpy_empty(); break;
+        case 17: _t->test_strncpy_copies_n(); break;
+        case 18: _t->test_strncpy_pads_nul(); break;
+        case 19: _t->test_strcat_basic(); break;
+        case 20: _t->test_strcat_empty_src(); break;
+        case 21: _t->test_strncat_n(); break;
+        case 22: _t->test_strncat_zero(); break;
+        case 23: _t->test_strcmp_equal(); break;
+        case 24: _t->test_strcmp_less(); break;
+        case 25: _t->test_strcmp_greater(); break;
+        case 26: _t->test_strcmp_prefix(); break;
+        case 27: _t->test_strncmp_equal_prefix(); break;
+        case 28: _t->test_strncmp_differ(); break;
+        case 29: _t->test_strncmp_zero(); break;
+        case 30: _t->test_strcoll_equal(); break;
+        case 31: _t->test_strxfrm_returns_length(); break;
+        case 32: _t->test_strtok_basic(); break;
+        case 33: _t->test_strtok_multi_delim(); break;
+        case 34: _t->test_strtok_no_delim(); break;
+        case 35: _t->test_strerror_not_null(); break;
+        case 36: _t->test_default_ctor(); break;
+        case 37: _t->test_cstr_ctor(); break;
+        case 38: _t->test_fill_ctor(); break;
+        case 39: _t->test_copy_ctor_deep(); break;
+        case 40: _t->test_copy_assign_deep(); break;
+        case 41: _t->test_self_assign(); break;
+        case 42: _t->test_concat_operator(); break;
+        case 43: _t->test_concat_assign(); break;
+        case 44: _t->test_cmp_operators(); break;
+        case 45: _t->test_subscript(); break;
+        case 46: _t->test_at_throws(); break;
+        case 47: _t->test_iterator_forward(); break;
+        case 48: _t->test_range_for(); break;
+        case 49: _t->test_iterator_distance(); break;
+        case 50: _t->test_const_iterator(); break;
+        case 51: _t->test_reserve(); break;
+        case 52: _t->test_resize_extend(); break;
+        case 53: _t->test_resize_shrink(); break;
+        case 54: _t->test_empty(); break;
+        default: ;
+        }
+    }
+    (void)_a;
+}
+
+const QMetaObject *TestMyString::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *TestMyString::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN12TestMyStringE_t>.strings))
+        return static_cast<void*>(this);
+    return QObject::qt_metacast(_clname);
+}
+
+int TestMyString::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 55)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 55;
+    }
+    if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 55)
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+        _id -= 55;
+    }
+    return _id;
+}
+QT_WARNING_POP

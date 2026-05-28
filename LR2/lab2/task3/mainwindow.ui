@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>800</width><height>550</height></rect>
+  </property>
+  <property name="windowTitle"><string>Задание 3 — Иерархия Expression</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+
+    <item>
+     <widget class="QGroupBox">
+      <property name="title"><string>Иерархия классов</string></property>
+      <layout class="QVBoxLayout">
+       <item>
+        <widget class="QLabel">
+         <property name="text"><string>Expression (abstract) → Number | BinaryOperation (+, -, *, /)</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel">
+         <property name="text"><string>Введите арифметическое выражение (поддерживаются +, -, *, /, скобки):</string></property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout">
+         <item>
+          <widget class="QLineEdit" name="lineEditExpr">
+           <property name="placeholderText"><string>например: 3 + 4.5 * 5  или  (10 - 2) / 4</string></property>
+          </widget>
+         </item>
+         <item><widget class="QPushButton" name="btnEvaluate"><property name="text"><string>Вычислить</string></property></widget></item>
+         <item><widget class="QPushButton" name="btnExample"><property name="text"><string>Пример из условия</string></property></widget></item>
+         <item><widget class="QPushButton" name="btnClear"><property name="text"><string>Очистить</string></property></widget></item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelResult">
+         <property name="text"><string>Результат: —</string></property>
+         <property name="font">
+          <font><pointsize>14</pointsize><bold>true</bold></font>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QGroupBox">
+      <property name="title"><string>Лог вычислений и демонстрация иерархии</string></property>
+      <layout class="QVBoxLayout">
+       <item>
+        <widget class="QTextEdit" name="textLog">
+         <property name="readOnly"><bool>true</bool></property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+</ui>

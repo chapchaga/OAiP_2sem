@@ -1,0 +1,9 @@
+/Users/yaroslav/study/OAiP/2sem/LR4/Task_5/build/Desktop-Debug/CMakeFiles/Task_5.dir
+/Users/yaroslav/study/OAiP/2sem/LR4/Task_5/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/Users/yaroslav/study/OAiP/2sem/LR4/Task_5/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/Users/yaroslav/study/OAiP/2sem/LR4/Task_5/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+/Users/yaroslav/study/OAiP/2sem/LR4/Task_5/build/Desktop-Debug/CMakeFiles/install.dir
+/Users/yaroslav/study/OAiP/2sem/LR4/Task_5/build/Desktop-Debug/CMakeFiles/install/local.dir
+/Users/yaroslav/study/OAiP/2sem/LR4/Task_5/build/Desktop-Debug/CMakeFiles/install/strip.dir
+/Users/yaroslav/study/OAiP/2sem/LR4/Task_5/build/Desktop-Debug/CMakeFiles/Task_5_autogen_timestamp_deps.dir
+/Users/yaroslav/study/OAiP/2sem/LR4/Task_5/build/Desktop-Debug/CMakeFiles/Task_5_autogen.dir

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Binary Search Tree — Lab 8</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="mainLayout">
+    <item>
+     <widget class="QGroupBox" name="controlBox">
+      <property name="maximumWidth">
+       <number>320</number>
+      </property>
+      <property name="title">
+       <string>Управление деревом</string>
+      </property>
+      <layout class="QVBoxLayout" name="controlLayout">
+
+       <item>
+        <widget class="QLabel" name="labelValue">
+         <property name="text"><string>Значение:</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spinValue">
+         <property name="minimum"><number>-9999</number></property>
+         <property name="maximum"><number>9999</number></property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="btnAdd">
+         <property name="text"><string>Добавить (add)</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnRemove">
+         <property name="text"><string>Удалить узел (remove)</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnFind">
+         <property name="text"><string>Найти узел (find)</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnTraverse">
+        <property name="text"><string>Обход inorder (traverse)</string></property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QFrame" name="line1">
+         <property name="frameShape"><enum>QFrame::HLine</enum></property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QLabel" name="labelParent">
+         <property name="text"><string>Родитель (для вставки):</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spinParent">
+         <property name="minimum"><number>-9999</number></property>
+         <property name="maximum"><number>9999</number></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkLeft">
+         <property name="text"><string>Вставить как левого потомка</string></property>
+         <property name="checked"><bool>true</bool></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnInsertAt">
+         <property name="text"><string>Вставить в позицию</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnRemoveBranch">
+         <property name="text"><string>Удалить ветвь</string></property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QFrame" name="line2">
+         <property name="frameShape"><enum>QFrame::HLine</enum></property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QLabel" name="labelSubtree">
+         <property name="text"><string>Поддерево (значения через пробел):</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="editSubtree">
+         <property name="placeholderText"><string>напр: 10 5 15</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnInsertSubtree">
+         <property name="text"><string>Вставить поддерево</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget name="btnRemoveSubtree" class="QPushButton">
+         <property name="text"><string>Удалить поддерево</string></property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QFrame" name="line3">
+         <property name="frameShape"><enum>QFrame::HLine</enum></property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QLabel" name="labelLCA">
+         <property name="text"><string>НОП (два значения через пробел):</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="editLCA">
+         <property name="placeholderText"><string>напр: 3 7</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnLCA">
+         <property name="text"><string>Найти общего предка (LCA)</string></property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QFrame" name="line4">
+         <property name="frameShape"><enum>QFrame::HLine</enum></property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="btnClear">
+         <property name="text"><string>Очистить дерево</string></property>
+        </widget>
+       </item>
+
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation"><enum>Qt::Vertical</enum></property>
+         <property name="sizeHint" stdset="0"><size><width>20</width><height>40</height></size></property>
+        </spacer>
+       </item>
+
+      </layout>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation"><enum>Qt::Vertical</enum></property>
+
+      <widget class="QGroupBox" name="treeBox">
+       <property name="title"><string>Визуализация дерева</string></property>
+       <layout class="QVBoxLayout">
+        <item>
+         <widget class="QGraphicsView" name="graphicsView">
+          <property name="renderHints">
+           <set>QPainter::Antialiasing</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+
+      <widget class="QGroupBox" name="logBox">
+       <property name="title"><string>Лог операций</string></property>
+       <property name="maximumHeight"><number>180</number></property>
+       <layout class="QVBoxLayout">
+        <item>
+         <widget class="QPlainTextEdit" name="logOutput">
+          <property name="readOnly"><bool>true</bool></property>
+          <property name="placeholderText"><string>Здесь будут отображаться результаты операций...</string></property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+</ui>

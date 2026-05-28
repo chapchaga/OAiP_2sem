@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+fc458a86a5ea2590461e1356da1cb74e CMakeFiles/ShapesApp_autogen
+d131e39df151244de7de59f5d4fd0b38 ShapesApp_autogen/timestamp

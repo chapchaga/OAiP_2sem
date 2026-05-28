@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>900</width><height>600</height></rect>
+  </property>
+  <property name="windowTitle"><string>Задание 1 — Класс Date</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+    <item>
+     <layout class="QHBoxLayout">
+      <item><widget class="QPushButton" name="btnOpenFile"><property name="text"><string>Открыть файл</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnSave"><property name="text"><string>Сохранить файл</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnRunTests"><property name="text"><string>Запустить тесты (лог)</string></property></widget></item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="selectionBehavior"><enum>QAbstractItemView::SelectRows</enum></property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout">
+      <item><widget class="QPushButton" name="btnNextDay"><property name="text"><string>Следующий день</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnPrevDay"><property name="text"><string>Предыдущий день</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnWeekNumber"><property name="text"><string>Номер недели / Високосный</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnDuration"><property name="text"><string>Разница со следующей</string></property></widget></item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout">
+      <item><widget class="QLabel"><property name="text"><string>Дата рождения (ДД.ММ.ГГГГ):</string></property></widget></item>
+      <item><widget class="QLineEdit" name="lineEditBirthday"><property name="placeholderText"><string>например 15.05.1995</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnBirthday"><property name="text"><string>Дней до ДР</string></property></widget></item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout">
+      <item><widget class="QLabel"><property name="text"><string>Новая дата:</string></property></widget></item>
+      <item><widget class="QLineEdit" name="lineEditNewDate"><property name="placeholderText"><string>ДД.ММ.ГГГГ</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnAddDate"><property name="text"><string>Добавить дату</string></property></widget></item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+</ui>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>1000</width><height>680</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hash Table Open Addressing — Modular vs Universal (Variant 4)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="vMain" >
+
+    <item>
+     <widget class="QGroupBox" name="groupControls">
+      <property name="title"><string>Controls</string></property>
+      <layout class="QHBoxLayout">
+       <item>
+        <widget class="QLabel"><property name="text"><string>Table size:</string></property></widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboTableSize">
+         <property name="maximumWidth"><number>80</number></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel"><property name="text"><string>Hash type:</string></property></widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboHashType">
+         <property name="maximumWidth"><number>110</number></property>
+        </widget>
+       </item>
+       <item><widget class="QLabel"><property name="text"><string>Key:</string></property></widget></item>
+       <item>
+        <widget class="QLineEdit" name="editKey">
+         <property name="placeholderText"><string>int</string></property>
+         <property name="maximumWidth"><number>70</number></property>
+        </widget>
+       </item>
+       <item><widget class="QLabel"><property name="text"><string>Value:</string></property></widget></item>
+       <item>
+        <widget class="QLineEdit" name="editValue">
+         <property name="placeholderText"><string>string</string></property>
+         <property name="maximumWidth"><number>100</number></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnInsert">
+         <property name="text"><string>Insert</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnSearch">
+         <property name="text"><string>Search</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnClear">
+         <property name="text"><string>Clear</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnBenchmark">
+         <property name="text"><string>Run Benchmark</string></property>
+         <property name="styleSheet"><string>font-weight:bold; background:#2255aa; color:white; padding:4px 10px;</string></property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QSplitter" name="splitterMain">
+      <property name="orientation"><enum>Qt::Horizontal</enum></property>
+
+      <widget class="QPlainTextEdit" name="memoTable">
+       <property name="minimumWidth"><number>280</number></property>
+       <property name="font">
+        <font><family>Courier New</family><pointsize>9</pointsize></font>
+       </property>
+       <property name="readOnly"><bool>true</bool></property>
+      </widget>
+
+      <widget class="QWidget" name="chartWidget">
+       <property name="minimumWidth"><number>500</number></property>
+       <layout class="QVBoxLayout">
+        <item>
+         <widget class="QLabel" name="labelChart">
+          <property name="text"><string></string></property>
+          <property name="alignment"><set>Qt::AlignCenter</set></property>
+          <property name="styleSheet"><string>background:#181820; border:1px solid #444;</string></property>
+          <property name="minimumHeight"><number>300</number></property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QPlainTextEdit" name="memoLog">
+      <property name="maximumHeight"><number>140</number></property>
+      <property name="readOnly"><bool>true</bool></property>
+      <property name="font">
+       <font><family>Courier New</family><pointsize>9</pointsize></font>
+      </property>
+      <property name="placeholderText"><string>Log output...</string></property>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+</ui>

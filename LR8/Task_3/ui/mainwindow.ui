@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lab 8 — Map / Set / HashTable</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <widget class="QWidget" name="tabMap">
+       <attribute name="title"><string>Map</string></attribute>
+       <layout class="QVBoxLayout">
+        <item>
+         <layout class="QHBoxLayout">
+          <item><widget class="QLabel"><property name="text"><string>Key:</string></property></widget></item>
+          <item><widget class="QLineEdit" name="mapKeyInput"/></item>
+          <item><widget class="QLabel"><property name="text"><string>Value:</string></property></widget></item>
+          <item><widget class="QLineEdit" name="mapValueInput"/></item>
+          <item><widget class="QPushButton" name="mapInsertBtn"><property name="text"><string>Insert</string></property></widget></item>
+          <item><widget class="QPushButton" name="mapEraseBtn"><property name="text"><string>Erase</string></property></widget></item>
+          <item><widget class="QPushButton" name="mapFindBtn"><property name="text"><string>Find</string></property></widget></item>
+          <item><widget class="QPushButton" name="mapClearBtn"><property name="text"><string>Clear</string></property></widget></item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout">
+          <item>
+           <layout class="QVBoxLayout">
+            <item><widget class="QLabel"><property name="text"><string>Tree Iterator (in-order):</string></property></widget></item>
+            <item><widget class="QListWidget" name="mapTreeList"/></item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout">
+            <item><widget class="QLabel"><property name="text"><string>Linked List Iterator:</string></property></widget></item>
+            <item><widget class="QListWidget" name="mapLinkedList"/></item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item><widget class="QLabel" name="mapStatusLabel"><property name="text"><string></string></property></widget></item>
+       </layout>
+      </widget>
+
+      <widget class="QWidget" name="tabSet">
+       <attribute name="title"><string>Set</string></attribute>
+       <layout class="QVBoxLayout">
+        <item>
+         <layout class="QHBoxLayout">
+          <item><widget class="QLabel"><property name="text"><string>Key:</string></property></widget></item>
+          <item><widget class="QLineEdit" name="setKeyInput"/></item>
+          <item><widget class="QPushButton" name="setInsertBtn"><property name="text"><string>Insert</string></property></widget></item>
+          <item><widget class="QPushButton" name="setEraseBtn"><property name="text"><string>Erase</string></property></widget></item>
+          <item><widget class="QPushButton" name="setContainsBtn"><property name="text"><string>Contains?</string></property></widget></item>
+          <item><widget class="QPushButton" name="setClearBtn"><property name="text"><string>Clear</string></property></widget></item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout">
+          <item>
+           <layout class="QVBoxLayout">
+            <item><widget class="QLabel"><property name="text"><string>Tree Iterator:</string></property></widget></item>
+            <item><widget class="QListWidget" name="setTreeList"/></item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout">
+            <item><widget class="QLabel"><property name="text"><string>Linked List Iterator:</string></property></widget></item>
+            <item><widget class="QListWidget" name="setLinkedList"/></item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item><widget class="QLabel" name="setStatusLabel"><property name="text"><string></string></property></widget></item>
+       </layout>
+      </widget>
+
+      <widget class="QWidget" name="tabHash">
+       <attribute name="title"><string>HashTable</string></attribute>
+       <layout class="QVBoxLayout">
+        <item>
+         <layout class="QHBoxLayout">
+          <item><widget class="QLabel"><property name="text"><string>Key:</string></property></widget></item>
+          <item><widget class="QLineEdit" name="hashKeyInput"/></item>
+          <item><widget class="QLabel"><property name="text"><string>Value:</string></property></widget></item>
+          <item><widget class="QLineEdit" name="hashValueInput"/></item>
+          <item><widget class="QPushButton" name="hashInsertBtn"><property name="text"><string>Insert</string></property></widget></item>
+          <item><widget class="QPushButton" name="hashEraseBtn"><property name="text"><string>Erase</string></property></widget></item>
+          <item><widget class="QPushButton" name="hashFindBtn"><property name="text"><string>Contains?</string></property></widget></item>
+          <item><widget class="QPushButton" name="hashClearBtn"><property name="text"><string>Clear</string></property></widget></item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout">
+          <item>
+           <layout class="QVBoxLayout">
+            <item><widget class="QLabel"><property name="text"><string>Contents:</string></property></widget></item>
+            <item><widget class="QListWidget" name="hashList"/></item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout">
+            <item><widget class="QLabel"><property name="text"><string>Stats:</string></property></widget></item>
+            <item><widget class="QLabel" name="hashStatsLabel"><property name="text"><string>Size: 0  Capacity: 16</string></property></widget></item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item><widget class="QLabel" name="hashStatusLabel"><property name="text"><string></string></property></widget></item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+</ui>
